@@ -9,13 +9,13 @@ $$
 Fixing $x$ we can turn this into an ODE:
 
 $$
-\frac{dS_x(t)}{dt} = B_t S_x(t);\; S_x(0) = x
+\frac{dS_x(t)}{dt} = B_t S_x(t) ; \; S_x(0) = x
 $$
 
 Which can be solved using Forward Euler. We also numerically compute the derivative of the Langevin map, $DS_x(t) = DS(t)$ ($DS$ is independent of $x$) by solving the following ODE:
 
 $$
-\frac{dDS(t)}{dt} = B_t DS_x(t);\; DS(0) = \text{Id}
+\frac{dDS(t)}{dt} = B_t DS_x(t) ; \; DS(0) = \text{Id}
 $$
 
 This is also solved using Forward Euler.
