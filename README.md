@@ -15,7 +15,7 @@ $$
 Which can be solved using Forward Euler. We also numerically compute the derivative of the Langevin map, $DS_x(t) = DS(t)$ ($DS$ is independent of $x$) by solving the following ODE:
 
 $$
-\frac{dDS(t)}{dt} = B_t DS_x(t) ; \quad DS(0) = \text{Id}
+\frac{d[DS(t)]}{dt} = B_t [DS_x(t)] ; \quad DS(0) = \text{Id}
 $$
 
 This is also solved using Forward Euler.
